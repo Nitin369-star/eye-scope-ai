@@ -7,7 +7,7 @@ import io
 import os
 import uuid
 
-from ml.model import predict_image, make_gradcam_heatmap, overlay_heatmap_on_image
+from model import predict_image, make_gradcam_heatmap, overlay_heatmap_on_image
 from utils.pdf_generator import generate_pdf
 from utils import save_patient_record  # MongoDB insert function
 
