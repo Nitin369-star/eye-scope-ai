@@ -2,7 +2,7 @@ import requests
 from datetime import datetime
 from pymongo import MongoClient
 import os
-from ml.model import predict_image, make_gradcam_heatmap, overlay_heatmap_on_image
+from model import predict_image, make_gradcam_heatmap, overlay_heatmap_on_image
 from pdf_generator import generate_pdf
 import numpy as np
 from PIL import Image
