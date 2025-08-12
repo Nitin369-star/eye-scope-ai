@@ -5,11 +5,9 @@ from tensorflow.keras.models import load_model
 from PIL import Image
 from matplotlib import cm
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = "keras_model.h5"
+LABELS_PATH = "labels.txt"
 
-# Load model at startup
-MODEL_PATH = os.path.join(BASE_DIR, "..", "keras_model.h5")
-LABELS_PATH = os.path.join(BASE_DIR, "..", "labels.txt")
 
 model = load_model(MODEL_PATH)
 # feature extractor & classifier head (as in your exported model)
