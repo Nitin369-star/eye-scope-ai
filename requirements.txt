@@ -1,10 +1,30 @@
+# Core web framework
 fastapi
-uvicorn
-tensorflow
-numpy
-Pillow
+uvicorn[standard]
+
+# ML / AI
+tensorflow==2.15.0
+keras==2.15.0
+numpy>=1.23
+pandas
+scikit-learn
+
+# Image / CV
+Pillow>=9.0
 matplotlib
+opencv-python-headless  # (headless version avoids GUI issues in cloud)
+
+# NLP / Translation
+deep-translator
+openai>=1.0.0
+openai-whisper
+
+# Utilities
+requests
+pyttsx3
 fpdf
 qrcode
-deep-translator
+
+# Database
 pymongo
+python-multipart   # required for handling file uploads in FastAPI
